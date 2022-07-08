@@ -4,7 +4,7 @@ This repository is a compilation of past projects from Jihyun Jeon.
 
 ## 1. Rescue Mission
 
-Rescue Mission is a game written in C. The game was developed as a final project of cs3 in 2022 Spring term.    
+Rescue Mission is a game written in C. The game was developed as a final project of cs3 in 2022 Spring term with Philippe Des Boscs, Victor Gomez, and Riti Argrawal.    
 The game was implemented using sdl_wrapper and emscripten.   
 The game features a hero that has to avoid obstacles (lasers, zappers and missiles). Coins lead to a higher score.    
 Special powerups (invincibility and coin magnet) can be used with the powerup coin.  
