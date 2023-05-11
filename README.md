@@ -1,6 +1,6 @@
 # portfolio
 
-This repository is a compilation of past projects from Jihyun Jeon.  
+This repository contains a selection of past and present projects from Jihyun Jeon.   
 
 ## 1. Rescue Mission
 
@@ -12,24 +12,28 @@ Special powerups (invincibility and coin magnet) can be used with the powerup co
 
 - Uses vector graphics   
 - Uses a physics engine, including collision detection, drag, spring, and gravity    
-- Highscore tracking   
+- Highscore tracking 
 
-## 2. Data Structures
+## 2. Autonomous Navigation
+
+The programs control a robot with two motors and 3 IR sensors. The robot is able to follow a black line on a white background, autonomously explore a map, and find and traverse the shortest path between two coordinates with Dijkstra's Algorithm. This project is currently in progress, with obstacle detection and wall following to be added. The programs are implemented for projects of ME/CS/EE129 in 2023 Spring term with Emily Baylock and Catherine Zheng.
+
+## 3. Data Structures
 
 The data structures were implemented in Java. They were written as projects of cs2 in 2022 Winter term.   
 The data structures include graph, dictionarys (chaining hash and move to front), deques (linked, array), heap and maps    
 
-## 3. Matrix    
-
-The matrix was implemented in Java. It was created as a project for AP Computer Science in 2018.     
-Various matrix calculations were implemented, including Gaussian elimination and back substitution.    
-
 ## 4. Sort
 
 Various sorting algorithms were implemented in Java. They were written as a project for AP Computer Science in 2018.     
-The sorting algorthms implemented include heap, insertion, quick, and selection sort.    
+The sorting algorthms implemented include heap, insertion, quick, and selection sort. 
 
-## 5. Heart Simulation    
+## 5. Matrix    
+
+The matrix was implemented in Java. It was created as a project for AP Computer Science in 2018.     
+Various matrix calculations were implemented, including Gaussian elimination and back substitution.     
+
+## 6. Heart Simulation    
 
 A simulation for hearts implemented in Python. The simulation was written for a project in AP Statistics in 2019.   
 The simulation was created to test various factors and their influence on winning a game in Hearts.    
