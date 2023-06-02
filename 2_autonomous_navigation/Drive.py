@@ -9,11 +9,13 @@ class Drive(object):
         self.motorL = Motor(m1a, m1b, 1, io)
         self.motorR = Motor(m2a, m2b, -1, io)
         
-        self.io = io
-        
     def drive(self, intensity, dir):
         left = 1
         right = 0
+
+        # This number adjusts for the different speeds that the left and right wheels turn
+        # when given the same pwm input. This is probably because we have motors with 
+        # different gear ratios :(
         adjust = 10
 
         if dir == left:
@@ -26,12 +28,12 @@ class Drive(object):
             raise Exception("Invalid direction")
         
         if intensity == "STRAIGHT":
-            self.motorL.setPWM(192)
+            self.motorL.setPWM(210)
             self.motorR.setPWM(210)
                 
         elif intensity == "VEER":
-            motor_fast.setPWM(200+2*dir*adjust)
-            motor_slow.setPWM(180-dir*adjust)
+            motor_fast.setPWM(210)
+            motor_slow.setPWM(180-(dir-1)*1.5*adjust)
                 
         elif intensity == "STEER":
             motor_fast.setPWM(210)
@@ -50,16 +52,26 @@ class Drive(object):
             #motor_slow.setPWM(-205+(dir-1)*adjust*1.5)
 
             motor_fast.setPWM(205)
-            motor_slow.setPWM(-205+(dir)*adjust*1.5)
+            motor_slow.setPWM(-215 - 3 * (1 - dir) * adjust)
 
             # print(-205+(dir-1)*adjust*1.5)
-                
+        
+        elif intensity == "BACK":
+            self.motorL.setPWM(-220)
+            self.motorR.setPWM(-210)
+
+
+
+
         elif intensity == "STOP":
             motor_fast.turnOff()
             motor_slow.turnOff()
+
+        
                 
         else:
             raise Exception("Not defined intensity")
-            
-            
         
+    def set_PWM(self, pwm_l, pwm_r):
+        self.motorL.setPWM(pwm_l)
+        self.motorR.setPWM(pwm_r)

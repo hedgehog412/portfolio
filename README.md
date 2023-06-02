@@ -16,7 +16,7 @@ Special powerups (invincibility and coin magnet) can be used with the powerup co
 
 ## 2. Autonomous Navigation
 
-The programs control a robot with two motors and 3 IR sensors. The robot is able to follow a black line on a white background, autonomously explore a map, and find and traverse the shortest path between two coordinates with Dijkstra's Algorithm. This project is currently in progress, with obstacle detection and wall following to be added. The programs are implemented for projects of ME/CS/EE129 in 2023 Spring term with Emily Baylock and Catherine Zheng.
+The programs control a robot with two motors, 3 IR sensors and 3 Ultrasound sensors. The robot is able to follow a black line on a white background, autonomously explore a map, and find and traverse the shortest path between two coordinates with Dijkstra's Algorithm while avoiding streets blocked with obstacles. The robot takes inputs from the user to trigger its actions, including explore, pause, goal, save, clear and has a stepping mode mainly used for debugging. This project is currently in progress. The programs are implemented for projects of ME/CS/EE129 in 2023 Spring term with Emily Baylock and Catherine Zheng.
 
 ## 3. Data Structures
 
