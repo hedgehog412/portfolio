@@ -6,7 +6,7 @@ This repository contains a selection of past and present projects from Jihyun Je
 
 Rescue Mission is a game written in C. The game was developed as a final project of cs3 in 2022 Spring term with Philippe Des Boscs, Victor Gomez, and Riti Argrawal.    
 A video of the gameplay can be accessed at https://www.youtube.com/watch?v=4ZSODnn69s8     
-The game was implemented using sdl_wrapper and emscripten.   
+The game was implemented using SDL2 and emscripten.   
 The game features a hero that has to avoid obstacles (lasers, zappers and missiles). Coins lead to a higher score.    
 Special powerups (invincibility and coin magnet) can be used with the powerup coin.  
 
